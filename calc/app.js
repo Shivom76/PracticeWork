@@ -31,7 +31,23 @@ Array.from(btnAll).forEach(btn=>{
 
 
 
+// let errorDiv=document.getElementsByClassName("errorDiv")
+// let errBtns=document.queruSelectorAll("error-btn");
 
+// Array.from(errBtns).forEach((errBtn)=>{
+//     errBtn.addEventListener("click",()=>{
+//         errorMsg.classList.remove("hidden");
+
+//         // Restart animation (to allow re-trigger)
+//         errorDiv.classList.remove("errorDiv"); // remove class
+//         void errorDiv.offsetWidth;             // force reflow
+//         errorDiv.classList.add("errorDiv");    // re-add class
+//     })
+// })
+
+// setTimeout(() => {
+//     errorDiv.classList.add("hidden");
+//   }, 3000);
 
 
 
