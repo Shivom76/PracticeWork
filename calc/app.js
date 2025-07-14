@@ -6,6 +6,7 @@ const operators=["/" , "X" , "-" , "+"]
 
 let firstNum=null;
 let operator=null;
+let shouldReset=false;
 
 
 btnAll.forEach(btn=>{
@@ -21,15 +22,11 @@ btnAll.forEach(btn=>{
         }
 
         if(!isNaN(val)){
-            if(val=="0"){
-                display.innerText+=val;
+            if(val==="0" || shouldReset){
+                display.innerText=val;
+                shouldReset=false;
+            }
                 
-            }
-            
-            else if(operators.includes(display.innerText.slice(-1))){
-                display.innerText+=val;
-            }
-
             else{
                 display.innerText+=val
             }
