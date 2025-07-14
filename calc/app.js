@@ -12,20 +12,20 @@ Array.from(btnAll).forEach(btn=>{
         val=btn.innerText
         console.log(e.target.innerText);
 
-        if(val==="AC"){
-            input.value=0
-            string=0
-        }
 
         if(val=="="){
             string=eval(string)
+            input.value=string
         }
-        if(val!="AC"){
+        else{
             string+=val
             input.value=string;
         }
         
-
+        if(val==="AC"){
+            input.value=0
+            string=0
+        }
     })
 })
 
