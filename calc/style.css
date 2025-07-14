@@ -27,7 +27,8 @@ h2{
     text-align: center;
     justify-self:center;
     width:80%;
-    border-radius:15px
+    border-radius:15px;
+    overflow-x: auto;
 }
 
 /* .line{

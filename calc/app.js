@@ -31,7 +31,7 @@ btnAll.forEach(btn=>{
             }
 
             else{
-                display.innerText=val
+                display.innerText+=val
             }
         }
 
@@ -44,10 +44,13 @@ btnAll.forEach(btn=>{
             }
         }
         if(val==="="){
-            display.innerText=calc();
-            let present=display.innerText;
-            pre1=present.split(opt);
-            console.log(pre1)
+            if (firstNum && operator ){
+                display.innerText=calc();
+                let present=display.innerText;
+                pre1=present.split(opt);
+                console.log(pre1)
+            }
+           
         }
         
         console.log(display.innerText)
